@@ -9,14 +9,14 @@ public class CalculadoraDeMedias {
 
         double media = calculaMediaDaTurma(alunos, scan);
 
-        System.out.printf("MÃ©dia da turma %.1f", media);
+        System.out.printf("Média da turma %.1f", media);
     }
 
     public static double calculaMediaDaTurma(String[] alunos, Scanner scanner) {
 
         double soma = 0;
         for(String aluno : alunos) {
-            System.out.printf("Nota do aluno %s: ", aluno);
+            System.out.printf("Nota do(a) aluno(a) %s: ", aluno);
             double nota = scanner.nextDouble();
             soma += nota;
         }
